@@ -1,0 +1,14 @@
+services:
+  web:
+    image: php:8.3-apache
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+  db:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
