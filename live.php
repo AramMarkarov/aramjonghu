@@ -48,38 +48,6 @@
     </div>
 </footer>
 
-<script>
-    var server = "http://aramjonghu.nl:8088/janus"; // Adjust if needed
-
-    // Initialize Janus
-    Janus.init({debug: "all", callback: function() {
-            var janus = new Janus({
-                server: server,
-                success: function() {
-                    janus.attach({
-                        plugin: "janus.plugin.streaming",
-                        success: function(pluginHandle) {
-                            var streaming = pluginHandle;
-                            // Adjust ID if needed
-                            streaming.send({message: {request: "watch", id: 1}});
-                        },
-                        onmessage: function(msg, jsep) {
-                            if (jsep !== undefined && jsep !== null) {
-                                streaming.handleRemoteJsep({jsep: jsep});
-                            }
-                        },
-                        onremotestream: function(stream) {
-                            var video = document.getElementById('video');
-                            Janus.attachMediaStream(video, stream);
-                        }
-                    });
-                },
-                error: function(cause) {
-                    console.error(cause);
-                }
-            });
-        }});
-</script>
 </body>
 
 </html>
