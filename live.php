@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Stream</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/javascript/janus.js"></script> <!-- Updated local path -->
     <style>
         body {
             font-family: Arial, sans-serif;
