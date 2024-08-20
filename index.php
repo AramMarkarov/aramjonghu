@@ -19,10 +19,12 @@
                 <li><a href="#" class="hover:underline">Home</a></li>
                 <li><a href="#" class="hover:underline">About</a></li>
                 <li><a href="#" class="hover:underline">Contact</a></li>
+                <li><a href="live.php" class="hover:underline">Live Stream</a></li> <!-- Added Link -->
             </ul>
         </nav>
     </div>
 </header>
+
 
 <!-- Main Content -->
 <main class="container mx-auto p-4">
