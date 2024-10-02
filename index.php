@@ -21,7 +21,8 @@
                 <li><a href="live.php" class="hover:underline">Live Stream</a></li>
                 <li><a href="games.php" class="hover:underline">Games</a></li>
                 <li><a href="socials.php" class="hover:underline">Socials</a></li>
-                
+                <li><a href="nextcloud/index.php" class="hover:underline">Nextcloud</a></li>
+		        <li><a href="https://ant.aramjonghu.nl/watch/testaram" class="hover:underline">Stream</a></li>
             </ul>
         </nav>
     </div>
